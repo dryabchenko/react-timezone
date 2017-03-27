@@ -121,6 +121,7 @@ export default class TimezonePicker extends React.Component {
       >
         <div className="timezone-picker-textfield">
           <input
+            disabled={this.props.disabled}
             type="text"
             onFocus={e => this.handleFocus(e)}
             onBlur={e => this.handleBlur(e)}
