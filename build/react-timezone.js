@@ -90,7 +90,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    var _this = _possibleConstructorReturn(this, (TimezonePicker.__proto__ || Object.getPrototypeOf(TimezonePicker)).call(this, props));
 
-	    console.log(props);
 	    _this.timezones = Object.keys(props.timezones);
 
 	    _this.state = {
@@ -290,6 +289,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	TimezonePicker.propTypes = {
 	  defaultValue: _react.PropTypes.string,
+	  disabled: _react.PropTypes.bool,
 	  value: _react.PropTypes.string,
 	  onChange: _react.PropTypes.func,
 	  className: _react.PropTypes.string,
@@ -298,6 +298,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  timezones: _react.PropTypes.object };
 
 	TimezonePicker.defaultProps = {
+	  disabled: false,
 	  inputProps: {},
 	  timezones: __webpack_require__(7) };
 
